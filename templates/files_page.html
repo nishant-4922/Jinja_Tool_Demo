@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .navbar {
+            background-color: #4a90e2; /* Modern blue color */
+            color: #fff;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Ensure navbar is above other content */
+        }
+
+        .navbar .logo {
+            font-family: 'Recoleta', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            margin-right: 20px;
+        }
+
+        .navbar .nav-items {
+            display: flex;
+            flex: 1;
+            justify-content: flex-start; /* Align items to the left */
+        }
+
+        .navbar .nav-item {
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s, color 0.3s;
+            margin-right: 20px;
+        }
+
+        .navbar .nav-item:last-child {
+            margin-right: 0;
+        }
+
+        .navbar .nav-item:hover {
+            background-color: #357abd;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 60px; /* Offset for fixed navbar */
+            height: calc(100vh - 60px); /* Adjust height for navbar */
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #f5f5f5; /* Light gray background */
+            padding: 15px; /* Increased padding */
+            box-shadow: -2px 0px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+            height: 100%; /* Full height of the container */
+            overflow-y: auto; /* Make sidebar content scrollable */
+            border-radius: 8px; /* Rounded corners */
+            position: sticky;
+            top: 0; /* Sticky sidebar adjustment */
+            z-index: 500; /* Ensure sidebar is below navbar */
+            box-sizing: border-box; /* Include padding in height calculation */
+        }
+
+        .sidebar h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #333;
+            padding: 12px 15px;
+            text-decoration: none;
+            border-radius: 4px; /* Rounded corners for links */
+            margin-bottom: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #e0e0e0;
+            color: #000;
+        }
+
+        .highlight {
+            background-color: #d9edf7;
+        }
+
+        .content {
+            flex: 1;
+            padding: 16px;
+            overflow-y: auto; /* Scrollable if content overflows */
+            height: 100%; /* Full height of the container */
+            box-sizing: border-box; /* Include padding in height calculation */
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Recoleta:wght@400;700&display=swap">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">CODE GENIE</div>
+        <div class="nav-items">
+            <a href="?tab=functions" class="nav-item">Project Functions</a>
+            <a href="?tab=files" class="nav-item">Project Files</a>
+        </div>
+    </div>
+
+    <!-- Main Content and Sidebar Container -->
+    <div class="container">
+        <!-- Sidebar Menu Bar -->
+        <div class="sidebar">
+            
+                <h3>Files</h3>
+                
+                    <a href="#file-1" class="">File 1</a>
+                
+                    <a href="#file-2" class="">File 2</a>
+                
+                    <a href="#file-3" class="">File 3</a>
+                
+                    <a href="#file-4" class="">File 4</a>
+                
+                    <a href="#file-5" class="">File 5</a>
+                
+                    <a href="#file-6" class="">File 6</a>
+                
+                    <a href="#file-7" class="">File 7</a>
+                
+                    <a href="#file-8" class="">File 8</a>
+                
+                    <a href="#file-9" class="">File 9</a>
+                
+                    <a href="#file-10" class="">File 10</a>
+                
+                    <a href="#file-12" class="">File 12</a>
+                
+                    <a href="#file-13" class="">File 13</a>
+                
+            
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            
+                <h2>Project Files</h2>
+                
+                    <h3 id="file-1">File 1</h3>
+                    <p>This is the description for File 1.</p>
+                    <p><img src="https://via.placeholder.com/300x200?text=Graph+of+File+1" alt="Graph of File 1"></p>
+                
+                    <h3 id="file-2">File 2</h3>
+                    <p>This is the description for File 2.</p>
+                    <p><img src="https://via.placeholder.com/300x200?text=Graph+of+File+2" alt="Graph of File 2"></p>
+                
+                    <h3 id="file-3">File 3</h3>
+                    <p>This is the description for File 3.</p>
+                    <p><img src="https://via.placeholder.com/300x200?text=Graph+of+File+2" alt="Graph of File 3"></p>
+                
+                    <h3 id="file-4">File 4</h3>
+                    <p>This is the description for File 4.</p>
+                    <p><img src="https://via.placeholder.com/300x200?text=Graph+of+File+1" alt="Graph of File 4"></p>
+                
+                    <h3 id="file-5">File 5</h3>
+                    <p>This is the description for File 5.</p>
+                    <p><img src="https://via.placeholder.com/300x200?text=Graph+of+File+2" alt="Graph of File 5"></p>
+                
+                    <h3 id="file-6">File 6</h3>
+                    <p>This is the description for File 6.</p>
+                    <p><img src="https://via.placeholder.com/300x200?text=Graph+of+File+2" alt="Graph of File 6"></p>
+                
+                    <h3 id="file-7">File 7</h3>
+                    <p>This is the description for File 7.</p>
+                    <p><img src="https://via.placeholder.com/300x200?text=Graph+of+File+1" alt="Graph of File 7"></p>
+                
+                    <h3 id="file-8">File 8</h3>
+                    <p>This is the description for File 8.</p>
+                    <p><img src="https://via.placeholder.com/300x200?text=Graph+of+File+2" alt="Graph of File 8"></p>
+                
+                    <h3 id="file-9">File 9</h3>
+                    <p>This is the description for File 9.</p>
+                    <p><img src="https://via.placeholder.com/300x200?text=Graph+of+File+2" alt="Graph of File 9"></p>
+                
+                    <h3 id="file-10">File 10</h3>
+                    <p>This is the description for File 10.</p>
+                    <p><img src="https://via.placeholder.com/300x200?text=Graph+of+File+1" alt="Graph of File 10"></p>
+                
+                    <h3 id="file-12">File 12</h3>
+                    <p>This is the description for File 12.</p>
+                    <p><img src="https://via.placeholder.com/300x200?text=Graph+of+File+2" alt="Graph of File 12"></p>
+                
+                    <h3 id="file-13">File 13</h3>
+                    <p>This is the description for File 13.</p>
+                    <p><img src="https://via.placeholder.com/300x200?text=Graph+of+File+2" alt="Graph of File 13"></p>
+                
+            
+        </div>
+    </div>
+</body>
+</html>
